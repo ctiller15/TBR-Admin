@@ -32,6 +32,7 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'Admin',
+	'cloudinary secure': true,
 });
 
 // Load your project's Models
