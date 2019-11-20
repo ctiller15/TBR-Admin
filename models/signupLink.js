@@ -1,15 +1,15 @@
 var keystone = require('keystone'),
     Types = keystone.Field.Types;
  
-var Announcement = new keystone.List('Announcement', {
+var RaceLink = new keystone.List('SignupLink', {
 	map: {name: 'Title'}
 });
  
-Announcement.add({
+RaceLink.add({
     Title: { type: String, required: true, index: true, initial: true },
-    Text: { type: Types.Html, wysiwyg: true, initial: true, index: true, initial: true },
+    UrlText: { type: String, required: true, index: true, initial: true },
     Date: { type: Date, default: Date.now(), index: true },
     Display: {type: Boolean, default: true}
 });
  
-Announcement.register();
+RaceLink.register();
