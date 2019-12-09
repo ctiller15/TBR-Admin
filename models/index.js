@@ -1,3 +1,6 @@
 require('./users.js');
-require('./tests.js');
+require('./announcements.js');
 require('./signupLink.js');
+require('./firstRaceDetailSet.js');
+require('./secondRaceDetailSet.js');
+require('./thirdRaceDetailSet.js');
